@@ -214,6 +214,7 @@ pub type ErlNifResourceDtor = extern "C" fn(arg1: *mut ErlNifEnv, arg2: *mut c_v
 pub enum ErlNifResourceFlags {
     ERL_NIF_RT_CREATE = 1,
     ERL_NIF_RT_TAKEOVER = 2,
+    ERL_NIF_RT_CREATE_TAKEOVER = 3,
 }
 
 /// See [ErlNifCharEncoding](http://www.erlang.org/doc/man/erl_nif.html#ErlNifCharEncoding) in the Erlang docs.
